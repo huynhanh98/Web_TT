@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<!-- <style>
+    body {
+      margin: 0;
+      background-color: #f1f1f1;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #navbar {
+      background-color: #333;
+      position: fixed;
+      top: -50px;
+      width: 100%;
+      display: block;
+      transition: top 0.3s;
+    }
+    
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style> -->
+<style>
+    #myBtn {
+        background: #ff3b2f;
+        height: 40px;
+        width: 40px;
+        right: 50px;
+        bottom: 77px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 44px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+    #section-fli {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color: gray;
+    }
+
+    #section-banner {
+        padding-top: 80px;
+    }
+
+    body {
+        background-image: url(http://xopom.xyz/shopse/shopse/demos/img/slider/slide3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        ;
+    }
+</style>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">o7planning</a>
+        <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+              <a class="nav-link">Java</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link">C/C++</a>
+           </li>
+        </ul>
+     </nav> -->
+    <div class="header-top-area d-none d-md-block" style="background-color: white;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-7 d-flex align-items-center">
+                    <p>Call: 012346489 &nbsp;&nbsp;</p>
+
+                    <p>Email:support@gmail.com</p>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-5">
+                    <div class="header-right-member text-right">
+
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>My Account</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">Log in</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Log in</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Account</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i>English</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"><i>$USD</i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">USD</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">EUR</a>
+                                    </li>
+                                </ul>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-menu-area " style="background-color: white;" >
+        <div class="container ">
+            <div class="row " id="navbar" style="background-color: white;"  >
+                <div class="col-xl-2 col-lg-2 col-md-4 col-4 d-flex align-items-center">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="http://via.placeholder.com/128x52">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-8 col-8">
+                    <div class="header-right f-right">
+                        <ul>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#search-modal">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="d-shop-cart">
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                                    </i>
+                                    <span class="cart-count">3</span>
+                                </a>
+                                <ul class="minicart">
+                                    <li>
+                                        <div class="cart-img">
+                                            <a href="#">
+                                                <img src="http://via.placeholder.com/85x85" alt>
+                                            </a>
+                                        </div>
+                                        <div class="cart-content">
+                                            <h3>
+                                                <a href="#">Black & White Shoes</a>
+                                            </h3>
+                                            <div class="cart-price">
+                                                <span class="new">$ 229.9</span>
+                                                <span>
+                                                    <del>$239.9</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="del-icon">
+                                            <a href="#">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-img">
+                                            <a href="#">
+                                                <img src="http://via.placeholder.com/85x85" alt>
+                                            </a>
+                                        </div>
+                                        <div class="cart-content">
+                                            <h3>
+                                                <a href="#">Black & White Shoes</a>
+                                            </h3>
+                                            <div class="cart-price">
+                                                <span class="new">$ 229.9</span>
+                                                <span>
+                                                    <del>$239.9</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="del-icon">
+                                            <a href="#">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-img">
+                                            <a href="#">
+                                                <img src="http://via.placeholder.com/85x85" alt>
+                                            </a>
+                                        </div>
+                                        <div class="cart-content">
+                                            <h3>
+                                                <a href="#">Black & White Shoes</a>
+                                            </h3>
+                                            <div class="cart-price">
+                                                <span class="new">$ 229.9</span>
+                                                <span>
+                                                    <del>$239.9</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="del-icon">
+                                            <a href="#">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-menu f-right">
+
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mobile-menu"
+                            style="display: block;">
+                            <div class="container">
+                                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                                    <ul>
+                                        <li class="mega-menu">
+                                            <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="#">Section 1</a>
+                                                    <ul class="submenu  level-1">
+                                                        <li>
+                                                            <a href="#">Home Page 1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 4</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 5</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 6</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 7</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 8</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 9</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 10</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 11</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Section 2</a>
+                                                    <ul class="submenu">
+                                                        <li>
+                                                            <a href="#">Home Page 12</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 13</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 14</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 15</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 16</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 17</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 18</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 19</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 20</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 21</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 22</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Section 3</a>
+                                                    <ul class="submenu">
+
+                                                        <li>
+                                                            <a href="#">Home Page 23</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 24</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 25</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 26</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 27</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 28</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home Page 29</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home One Page 1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home One Page 2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Home One Page 3</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu">
+                                            <div class="top-sale">
+                                                <p>Sale</p>
+                                            </div>
+                                            <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="#">Category View</a>
+                                                    <ul class="submenu  level-1">
+                                                        <li>
+                                                            <a href="#">Grid View</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Grid Full Width</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">List View</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Sidebar Left</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Sidebar Right</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Shop Pages <i class="fa fa-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li>
+                                                            <a href="#">Login</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">My Wishlist</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Vendor Product</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Cart</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Checkout</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Products Types</a>
+                                                    <ul class="submenu">
+                                                        <li>
+                                                            <a href="#">Product details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Boxed Slider Banner</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Grouped Product</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Thumb Left Product</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Thumb Right Product</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Man</a>
+                                        </li>
+                                        <li>
+                                            <div class="top-new">
+                                                <p>New</p>
+                                            </div>
+                                            <a href="#">Woman</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="blog-2-col.html">Blog 2 Column</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-3-col.html">Blog 3 Column</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-left-sidebar.html">Blog left Sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html">Blog Details</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details-left-sidebar.html">Details Left Sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details-no-sidebar.html">Details Without Sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="about.html">About 1</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="contact.html">contact</a>
+                                                </li>
+                                                <li>
+                                                    <a href="login.html">login</a>
+                                                </li>
+                                                <li>
+                                                    <a href="vendor.html">vendor list</a>
+                                                </li>
+                                                <li>
+                                                    <a href="vendor-product.html">vendor product</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="slider-area" style="background-color: white; padding-bottom: 20px;">
+
+        
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="color: red;">
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://xopom.xyz/shopse/shopse/demos/img/slider/slide5.jpg"
+                            alt="Firt slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="http://xopom.xyz/shopse/shopse/demos/img/slider/slide5.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="http://xopom.xyz/shopse/shopse/demos/img/slider/slide3.jpg"
+                            alt="Third slide">
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- <section class="slider-area" style="background-color: white;">
+        <div class="slider-active slider-white slick-initialized slick-slider slick-dotted">
+            <div class="slick-list draggable">
+                <div class="slick-track" style="opacity: 1; width: 5697px;">
+                    <div class="single-slider slider-hight slide-height d-flex align-items-center slick-slide slick-current slick-active"
+                        style="background-image: url(http://xopom.xyz/shopse/shopse/demos/img/slider/slide4.jpg); width: 1899px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                        data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide00"
+                        aria-describedby="slick-slide-control00">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8 offset-xl-2">
+                                    <div class="slide-content style-1 text-center">
+                                        <h1 data-animation="fadeInUp" data-delay=".5s" class=""
+                                            style="animation-delay: 0.5s;">30% Off Gifts</h1>
+                                        <p data-animation="fadeInUp" data-delay="1s" class=""
+                                            style="animation-delay: 1s;">Left ot last-minute? We got you</p>
+                                        <a href="#" data-animation="fadeInUp" data-delay="1.5s" class="" tabindex="0"
+                                            style="animation-delay: 1.5s;">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slider slide-height d-flex align-items-center slick-slide"
+                        style="background-image: url(http://xopom.xyz/shopse/shopse/demos/img/slider/slide3.jpg); width: 1899px; position: relative; left: -1899px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;"
+                        data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01"
+                        aria-describedby="slick-slide-control01">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8 offset-xl-2">
+                                    <div class="slide-content style-1 text-center">
+                                        <h1 data-animation="fadeInUp" data-delay=".5s" class=""
+                                            style="animation-delay: 0.5s;">10% Off Gifts</h1>
+                                        <p data-animation="fadeInUp" data-delay="1s" class=""
+                                            style="animation-delay: 1s;">Left ot last-minute? We got you</p>
+                                        <a href="#" data-animation="fadeInUp" data-delay="1.5s" tabindex="-1" class=""
+                                            style="animation-delay: 1.5s;">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slider slide-height d-flex align-items-center slick-slide"
+                        style="background-image: url(http://xopom.xyz/shopse/shopse/demos/img/slider/slide3.jpg); width: 1899px; position: relative; left: -3798px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;"
+                        data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02"
+                        aria-describedby="slick-slide-control02">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="slide-content text-right">
+                                        <p data-animation="fadeInUp" data-delay=".1s" class=""
+                                            style="animation-delay: 0.1s;"><i class="ti-layout-line-solid"></i> The
+                                            lookbook</p>
+                                        <h1 data-animation="fadeInUp" data-delay=".3s" class=""
+                                            style="animation-delay: 0.3s;">Red men's <br> shoes</h1>
+                                        <a href="#" data-animation="fadeInUp" data-delay=".8s" tabindex="-1" class=""
+                                            style="animation-delay: 0.8s;">Discover</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="slick-dots" style="display: block;" role="tablist">
+                <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00"
+                        aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button>
+                </li>
+                <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01"
+                        aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li>
+                <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02"
+                        aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li>
+            </ul>
+        </div>
+    </section> -->
+    <section class="banner-area " style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="featured-wrap">
+                        <div class="featured-img">
+                            <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog3.jpg" alt="">
+                        </div>
+                        <div class="featured-content">
+                            <h2>Glasses Collection <br> for Men's</h2>
+                            <h2 class="color-yellow">Sale off 50%</h2>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="featured-wrap">
+                                <div class="featured-img">
+                                    <img src="http://via.placeholder.com/270x295" alt="">
+                                </div>
+                                <div class="featured-content">
+                                    <h2>Glasses Collection <br> for Men's</h2>
+                                    <h2 class="color-yellow">Sale off 50%</h2>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="featured-wrap">
+                                <div class="featured-img">
+                                    <img src="http://via.placeholder.com/270x295" alt="">
+                                </div>
+                                <div class="featured-content">
+                                    <h2>Glasses Collection <br> for Men's</h2>
+                                    <h2 class="color-yellow">Sale off 50%</h2>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <div class="featured-wrap">
+                                <div class="featured-img">
+                                    <img src="http://via.placeholder.com/570x296" alt="">
+                                </div>
+                                <div class="featured-content">
+                                    <h2>Glasses Collection <br> for Men's</h2>
+                                    <h2 class="color-yellow">Sale off 50%</h2>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2" style="padding-top: 30px;">
+                    <div class="area-title title-line text-center">
+                        <p>New arrivlas</p>
+                        <h2>#Recent Product</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="product-active owl-carousel owl-loaded owl-drag">
+                <div class="container">
+                    <div class="carousel" id="carousel-custom" data-flickity='{ "wrapAround": true }'>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px;margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes 1</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <!-- <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell" style="width: 270px; margin-right: 30px;">
+                            <div class="product-wrapper" style="width: 270px; margin-right: 30px;">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg" alt>
+                                        <img class="secondary-img"
+                                            src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg" alt>
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title
+                                            data-original-title="Shoppingb Cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-content pt-15">
+                                    <div>
+                                        <p>Black & White Shoes</p>
+                                    </div>
+                                    <div class="price-product f-left">
+                                        <span>
+                                            <ins>
+                                                <span>$79</span>
+                                            </ins>
+                                            <del>
+                                                <span>$79</span>
+                                            </del>
+                                        </span>
+
+
+                                    </div>
+                                    <div class="pro-rating f-right">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="product-area pt-20" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2" style="padding-top: 30px;">
+                    <div class="area-title title-line text-center">
+                        <p>New arivlas 2018</p>
+                        <h2>#New Arrivlas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+
+                    <div class="product-tab-content">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="product-active owl-carousel owl-loaded owl-drap owl-hidden">
+                                    <div class="owl-stage-outer">
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tabs-block">
+                        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                            <a class="nav-link active" href="#women" data-toggle="tab">Women</a>
+                            <a class="nav-link" href="#men" data-toggle="tab">Men </a>
+                            <a class="nav-link" href="#kid" data-toggle="tab">Kid </a>
+                            <a class="nav-link" href="#jewellery" data-toggle="tab">Jewellery </a>
+
+                        </nav>
+                        <div class="tab-content ">
+                            <div class="tab-pane active" id="women">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg"
+                                                        alt>
+                                                    <img class="secondary-img"
+                                                        src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg"
+                                                        alt>
+                                                </a>
+                                                <div class="product-action">
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content pt-15">
+                                                <div>
+                                                    <p>Black & White Shoes</p>
+                                                </div>
+                                                <div class="price-product f-left">
+                                                    <span>
+                                                        <ins>
+                                                            <span>$79</span>
+                                                        </ins>
+                                                        <del>
+                                                            <span>$79</span>
+                                                        </del>
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="pro-rating f-right">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg"
+                                                        alt>
+                                                    <img class="secondary-img"
+                                                        src="http://xopom.xyz/shopse/shopse/demos/img/product/woman-2.jpg"
+                                                        alt>
+                                                </a>
+                                                <div class="product-action">
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content pt-15">
+                                                <div>
+                                                    <p>Black & White Shoes</p>
+                                                </div>
+                                                <div class="price-product f-left">
+                                                    <span>
+                                                        <ins>
+                                                            <span>$79</span>
+                                                        </ins>
+                                                        <del>
+                                                            <span>$79</span>
+                                                        </del>
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="pro-rating f-right">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="http://xopom.xyz/shopse/shopse/demos/img/product/woman-2.jpg"
+                                                        alt>
+                                                    <img class="secondary-img"
+                                                        src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg"
+                                                        alt>
+                                                </a>
+                                                <div class="product-action">
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content pt-15">
+                                                <div>
+                                                    <p>Black & White Shoes</p>
+                                                </div>
+                                                <div class="price-product f-left">
+                                                    <span>
+                                                        <ins>
+                                                            <span>$79</span>
+                                                        </ins>
+                                                        <del>
+                                                            <span>$79</span>
+                                                        </del>
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="pro-rating f-right">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="div-content">
+                                            <div class="img-product-4">
+                                                <a href="#"><img src="http://via.placeholder.com/182x182"></a>
+                                            </div>
+                                            <div>
+                                                <p>Black & White Shoes</p>
+                                            </div>
+                                            <div class="price-product f-left">
+                                                <span>
+                                                    <ins>
+                                                        <span>$79</span>
+                                                    </ins>
+                                                    <del>
+                                                        <span>$79</span>
+                                                    </del>
+                                                </span>
+
+
+                                            </div>
+                                            <div class="pro-rating f-right">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="div-content">
+                                            <div class="img-product-4">
+                                                <a href="#"><img src="http://via.placeholder.com/182x182"></a>
+                                            </div>
+                                            <div>
+                                                <p>Black & White Shoes</p>
+                                            </div>
+                                            <div class="price-product f-left">
+                                                <span>
+                                                    <ins>
+                                                        <span>$79</span>
+                                                    </ins>
+                                                    <del>
+                                                        <span>$79</span>
+                                                    </del>
+                                                </span>
+
+                                            </div>
+                                            <div class="pro-rating f-right">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="div-content">
+                                            <div class="img-product-4">
+                                                <a href="#"><img src="http://via.placeholder.com/182x182"></a>
+                                            </div>
+                                            <div>
+                                                <p>Black & White Shoes</p>
+                                            </div>
+                                            <div class="price-product f-left">
+                                                <span>
+                                                    <ins>
+                                                        <span>$79</span>
+                                                    </ins>
+                                                    <del>
+                                                        <span>$79</span>
+                                                    </del>
+                                                </span>
+
+
+                                            </div>
+                                            <div class="pro-rating f-right">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="men">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="http://xopom.xyz/shopse/shopse/demos/img/product/product4.jpg"
+                                                        alt>
+                                                    <img class="secondary-img"
+                                                        src="http://xopom.xyz/shopse/shopse/demos/img/product/product2.jpg"
+                                                        alt>
+                                                </a>
+                                                <div class="product-action">
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="#" data-toggle="tooltip" data-placement="right" title
+                                                        data-original-title="Shoppingb Cart">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content pt-15">
+                                                <div>
+                                                    <p>Black & White Shoes</p>
+                                                </div>
+                                                <div class="price-product f-left">
+                                                    <span>
+                                                        <ins>
+                                                            <span>$79</span>
+                                                        </ins>
+                                                        <del>
+                                                            <span>$79</span>
+                                                        </del>
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="pro-rating f-right">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="kid">
+
+                            </div>
+                            <div class="tab-pane" id="Jewellery">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="baner-area-full pt-80" id="section-banner" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="featured-wrap">
+                        <div class="featured-img">
+                            <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog3.jpg">
+                        </div>
+                        <div class="featured-content">
+                            <h2>Glasses Collection <br> for Men's</h2>
+                            <h2 class="color-yellow">Sale off 50%</h2>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="featured-wrap">
+                        <div class="featured-img">
+                            <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog3.jpg" alt="">
+                        </div>
+                        <div class="featured-content">
+                            <h2>Glasses Collection <br> for Men's</h2>
+                            <h2 class="color-yellow">Sale off 50%</h2>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="featured-wrap">
+                        <div class="featured-img">
+                            <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog3.jpg" alt="">
+                        </div>
+                        <div class="featured-content">
+                            <h2>Glasses Collection <br> for Men's</h2>
+                            <h2 class="color-yellow">Sale off 50%</h2>
+                            <a href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-area bg-overlay" id="quote-area">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-lg-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="media-body ml-5 mr-5" style="text-align: center;">
+                                            <span> I had a few things I needed help with on this template...
+                                                Their customer service was amazing and helped me out many times.
+                                                All fits and works well and good!! Top marks. One of the complete
+                                                template with different requirements.
+                                                Thanks a lot for such great features, pages, shortcodes and home
+                                                variations. Incredible Job. </span>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 20px;">
+                                        <div class="media-body ml-5 mr-5 " style="text-align: center;">
+                                            <div class="quotes-img">
+                                                <img src="http://via.placeholder.com/100x100">
+                                                <h2>James Doe</h2>
+                                                <p>Ceo Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="media-body ml-5 mr-5" style="text-align: center;">
+                                            <span> I had a few things I needed help with on this template...
+                                                Their customer service was amazing and helped me out many times.
+                                                All fits and works well and good!! Top marks. One of the complete
+                                                template with different requirements.
+                                                Thanks a lot for such great features, pages, shortcodes and home
+                                                variations. Incredible Job. </span>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 20px;">
+                                        <div class="media-body ml-5 mr-5 " style="text-align: center;">
+                                            <div class="quotes-img">
+                                                <img src="http://via.placeholder.com/100x100">
+                                                <h2>Jason Doe</h2>
+                                                <p>Ceo Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="media-body ml-5 mr-5" style="text-align: center;">
+                                            <span> I had a few things I needed help with on this template...
+                                                Their customer service was amazing and helped me out many times.
+                                                All fits and works well and good!! Top marks. One of the complete
+                                                template with different requirements.
+                                                Thanks a lot for such great features, pages, shortcodes and home
+                                                variations. Incredible Job. </span>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 20px;">
+                                        <div class="media-body ml-5 mr-5 " style="text-align: center;">
+                                            <div class="quotes-img">
+                                                <img src="http://via.placeholder.com/100x100">
+                                                <h2>John Doe</h2>
+                                                <p>Ceo Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2" style="padding-top: 30px;">
+                    <div class="area-title text-center">
+                        <p>Entertainment</p>
+                        <h2>#From Blog News</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="product-wrapper">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog1.jpg" alt>
+
+                            </a>
+
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta mb-10">
+                                <span>
+                                    <a href="#">Fashion Trending</a>
+                                </span>
+                                <span>--</span>
+                                <span>4 months ago</span>
+
+
+                            </div>
+
+                            <h5>
+                                <a href="#"> Perfect Outfits for Your Spring Birthday</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3">
+                    <div class="product-wrapper">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog1.jpg" alt>
+
+                            </a>
+
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta mb-10">
+                                <span>
+                                    <a href="#">Fashion Trending</a>
+                                </span>
+                                <span>--</span>
+                                <span>4 months ago</span>
+
+
+                            </div>
+
+                            <h5>
+                                <a href="#"> Perfect Outfits for Your Spring Birthday</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3">
+                    <div class="product-wrapper">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog1.jpg" alt>
+
+                            </a>
+
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta mb-10">
+                                <span>
+                                    <a href="#">Fashion Trending</a>
+                                </span>
+                                <span>--</span>
+                                <span>4 months ago</span>
+
+
+                            </div>
+
+                            <h5>
+                                <a href="#"> Perfect Outfits for Your Spring Birthday</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3">
+                    <div class="product-wrapper">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="http://xopom.xyz/shopse/shopse/demos/img/blog/blog1.jpg" alt>
+
+                            </a>
+
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta mb-10">
+                                <span>
+                                    <a href="#">Fashion Trending</a>
+                                </span>
+                                <span>--</span>
+                                <span>4 months ago</span>
+
+
+                            </div>
+
+                            <h5>
+                                <a href="#"> Perfect Outfits for Your Spring Birthday</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brand-area gray-bg " id="section-fli">
+        <div class="container">
+            <div class="carousel" id="carousel-custom" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="carousel-cell-ml-3 mr-5">
+                    <a href="#"><img src="http://via.placeholder.com/168x70"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="black-bg">
+        <div class="footer-area pt-50 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-5">
+                        <div class="footer-widget mb-30">
+                            <img src="http://via.placeholder.com/128x52" alt class="pb-10">
+                            <ul class="contact-list">
+                                <li>
+                                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                                    <p>+0112233456</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                                    <p>184 Main Rd E, St Albans VIC 3021, Australia</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <p>contract@company.com</p>
+                                </li>
+
+                            </ul>
+                            <div class="footer-icon mt-20">
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3">
+                        <div class="footer-widget mb-30">
+                            <h3>QUICK LINK</h3>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">
+                                        <p>Store Location</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>Orders Tracking</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>Orders Tracking </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>Store Location</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2">
+                        <div class="footer-widget mb-30">
+                            <h3>My Account</h3>
+                            <ul class="footer-link">
+                                <li>
+                                    <p>My Account</p>
+                                </li>
+                                <li>
+                                    <p>Checkout</p>
+                                </li>
+                                <li>
+                                    <p>Shopping-cart</p>
+                                </li>
+                                <li>
+                                    <p>Custom-link</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="footer-widget pl-100 mp-30">
+                            <h2>SUBSCRIBE</h2>
+                            <p>subscribe to our newsletter and 10% off your firt purchase</p>
+                            <div class="subscribe-form style-1">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your email:">
+                                    <button class="btn">Subscribe</button>
+                                </form>
+                            </div>
+                            <div class="carts">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-border pt-30 pb-50" style="padding-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <p>Copyright 2018 ka_boldbaatar. All Right Reserver</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="lt-style text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">Store Location</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders Tracking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Size Guide</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <a id="myBtn" href="#top" style="position: fixed; z-index: 2147483647; display: none;"><i
+            class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "50px";
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $('#carousel-custom').flickity({
+            wrapAround: true
+        });
+    </script>
+   
+    <script>
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        document.getElementById('myBtn').addEventListener("click", function () {
+
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+
+
+</html>
